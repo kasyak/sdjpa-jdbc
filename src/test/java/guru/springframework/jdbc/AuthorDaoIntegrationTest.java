@@ -23,7 +23,6 @@ public class AuthorDaoIntegrationTest {
     @Test
     void testGetAuthorByName() {
         Author author = authorDao.findAuthorByName("Craig", "Walls");
-
         assertThat(author).isNotNull();
     }
 
